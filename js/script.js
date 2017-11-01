@@ -37,7 +37,7 @@ var newQuote = function(newQuote) {
 var newTweet = function() {
   console.log("Called newTweet");
 	// select twitter button href attribute to send a tweet with quote content
-	$('.tweet').attr('href', 'https://twitter.com/intent/tweet?text=' + '"' + $('#advice').text() +
+  $('.tweet').attr('href', 'https://twitter.com/intent/tweet?text=' + '"' + $('#advice').text() +
   $('#author').text() + '"' + ' Get a Random Quote at https://codepen.io/JonLangel/pen/kXdmqP'); 
 	return false;
 }
@@ -51,7 +51,7 @@ $(document).ready(function() {
   });
   
   $('#twitter-button').click(function() {
-    newTweet();
+	  newTweet();
   });
 	
 });
